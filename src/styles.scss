@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//fonts
+@font-face {
+    font-family: 'satoshiBlack';
+    src: url('assets/fonts/Satoshi-Black.ttf') format('truetype');
+    
+}
+$satoshiBold: "satoshiBlack";
+
+@font-face {
+    font-family: 'satoshiLight';
+    src: url('assets/fonts/Satoshi-Light.ttf') format('truetype');
+}
+
+$satoshiLight: "satoshiLight";
+
+@font-face {
+    font-family: 'satoshiMedium';
+    src: url('assets/fonts/Satoshi-Medium.ttf') format('truetype');
+}
+
+$satoshiMedium: "satoshiMedium";
+
+@font-face {
+    font-family: 'satoshiRegular';
+    src: url('assets/fonts/Satoshi-Regular.ttf') format('truetype');
+}
+
+$satoshiRegular: "satoshiRegular";
