@@ -63,7 +63,7 @@
                 text-align: center;
                 font-size: 46px;
                 font-weight: 500;
-                line-height: 1.1;
+                line-height: 1.1em;
                 letter-spacing: -1.95px;
                 background: linear-gradient(106deg, #E5E5E5 24.81%, #FFB2B2 49.89%, #FF7477 85.37%, #F44 99.68%);
                 background-clip: text;
@@ -71,14 +71,15 @@
                 -webkit-text-fill-color: transparent;
                 margin-bottom: 25px;
                 font-family: $satoshiMedium;
+                padding-bottom: 15px;
             }
             &-video{
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                .video{
+                video{
                     width: 100%;
-                    height: 200px; /*just for a while*/
+                    height: auto; 
                     background-color: rgb(212, 212, 212);
                     border-radius: 10px;
                 }
@@ -127,34 +128,36 @@
         .home-container{
             width: 70%;
             .home-title{
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 &-logo{
                     width: 100%;
                     &-icon{
-                        margin-right: 15px;
+                        margin-right: 0px;
                         img{
-                            width: 85%;
+                            width: 70%;
                         }
                     }
                     &-text{
                         img{
+                            width:85%;
+                            margin: auto;
                         }
                         &-subtitle{
-                            font-size: 17.5px;
+                            font-size: 16.5px;
                         }
                     }
                 }
             }
             .home-video{
                 &-title{
-                    font-size: 60px;
-                    margin-bottom: 10px;
+                    font-size: 58px;
+                    margin-bottom: 0px;
                     line-height: 1.3em;
                 }
                 &-video{
-                    .video{
-                        width: 748.6px;
-                        height: 385.85px;
+                    video{
+                        width: 700.6px;
+                        height: auto;
                     }
                 }
             }
@@ -168,7 +171,7 @@
             }
         }
     }
- }
+}
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  
@@ -205,9 +208,9 @@
                     line-height: 1.3em
                 }
                 &-video{
-                    .video{
+                    video{
                         width: 788px;
-                        height: 443px;
+                        height: auto;
                     }
                 }
             }

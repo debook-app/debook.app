@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  // import the video into the 'assets' folder and change the name, 
+  // then replace it with the one below
+  videoUrl = 'assets/media/example.mp4';
 }
