@@ -1,231 +1,234 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 // globally setting links to white for now
 a {
-    color:#FFF;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default
-.home{
-    width: 100%;
-    height: 100dvh;        
-    background: radial-gradient(circle at bottom left, #c43535 -60%, black 60%);      
+.home {
+  width: 100%;
+  height: 100dvh;
+  background: radial-gradient(circle at bottom left, #c43535 -60%, black 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-container {
+    width: 90%;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
-    .home-container{
-        width: 90%;
-        height: auto; 
+    .home-title {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      &-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        &-icon {
+          margin-right: 10px;
+          display: flex;
+          justify-content: end;
+          img {
+            width: 100%;
+          }
+        }
+        &-text {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 25px;
+          img {
+            width: 100%;
+          }
+          &-subtitle {
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 97%;
+            letter-spacing: -0.525px;
+            margin-top: 10px;
+            font-family: $satoshiRegular;
+          }
+        }
+      }
+    }
+
+    .home-video {
+      &-title {
+        text-align: center;
+        font-size: 46px;
+        font-weight: 500;
+        line-height: 1.1em;
+        letter-spacing: -1.95px;
+        background: linear-gradient(
+          106deg,
+          #e5e5e5 24.81%,
+          #ffb2b2 49.89%,
+          #ff7477 85.37%,
+          #f44 99.68%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 25px;
+        font-family: $satoshiMedium;
+        padding-bottom: 15px;
+      }
+      &-video {
+        width: 100%;
         display: flex;
         justify-content: center;
-        flex-direction: column;
-    
-        .home-title{
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: center;
-            &-logo{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                width: 70%;
-                &-icon{
-                    margin-right: 10px;
-                    display: flex;
-                    justify-content: end;
-                    img{
-                        width: 100%;
-                    }
-                }
-                &-text{
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    margin-top: 25px;
-                    img{
-                        width: 100%;
-                    }
-                    &-subtitle{
-                        color: #FFF;
-                        text-align: center;
-                        font-size: 14px;
-                        font-weight: 500;
-                        line-height: 97%; 
-                        letter-spacing: -0.525px;
-                        margin-top: 10px;
-                        font-family: $satoshiRegular;
-                    }
-                }
-            }
-    
+        video {
+          width: 100%;
+          height: auto;
+          background-color: rgb(212, 212, 212);
+          border-radius: 10px;
         }
-    
-        .home-video{
-            &-title{
-                text-align: center;
-                font-size: 46px;
-                font-weight: 500;
-                line-height: 1.1em;
-                letter-spacing: -1.95px;
-                background: linear-gradient(106deg, #E5E5E5 24.81%, #FFB2B2 49.89%, #FF7477 85.37%, #F44 99.68%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                margin-bottom: 25px;
-                font-family: $satoshiMedium;
-                padding-bottom: 15px;
-            }
-            &-video{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                video{
-                    width: 100%;
-                    height: auto; 
-                    background-color: rgb(212, 212, 212);
-                    border-radius: 10px;
-                }
-
-            }
-        }
-
-        .home-button{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 60px;
-            button{
-                width: 100%;
-                height: 64px;
-                padding: 20px;
-                border-radius: 20px;
-                border: 0.5px solid #F44;
-                background: #F44;
-                text-align: center;
-
-                color: #FFF;
-                font-size: 15px;
-                font-weight: 700;
-                font-family: $satoshiBold;
-                line-height: 24px; 
-                letter-spacing: -0.32px;
-            }
-        }
+      }
     }
 
+    .home-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+      button {
+        width: 100%;
+        height: 64px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 0.5px solid #f44;
+        background: #f44;
+        text-align: center;
+
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+      }
+    }
+  }
 }
 
-
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    .home{
-        height: 100vh;        
-        background: radial-gradient(circle at bottom left, #c43535 2%, black 40%);      
-        .home-container{
-            width: 70%;
-            .home-title{
-                margin-bottom: 10px;
-                &-logo{
-                    width: 100%;
-                    &-icon{
-                        margin-right: 0px;
-                        img{
-                            width: 70%;
-                        }
-                    }
-                    &-text{
-                        img{
-                            width:85%;
-                            margin: auto;
-                        }
-                        &-subtitle{
-                            font-size: 16.5px;
-                        }
-                    }
-                }
+@media (min-width: 992px) {
+  .home {
+    height: 100vh;
+    background: radial-gradient(circle at bottom left, #c43535 2%, black 40%);
+    .home-container {
+      width: 70%;
+      .home-title {
+        margin-bottom: 10px;
+        &-logo {
+          width: 100%;
+          &-icon {
+            margin-right: 0px;
+            img {
+              width: 70%;
             }
-            .home-video{
-                &-title{
-                    font-size: 58px;
-                    margin-bottom: 0px;
-                    line-height: 1.3em;
-                }
-                &-video{
-                    video{
-                        width: 700.6px;
-                        height: auto;
-                    }
-                }
+          }
+          &-text {
+            img {
+              width: 85%;
+              margin: auto;
             }
-            .home-button{
-                margin-top: 15px;
-                button{
-                    width: 340px;
-                    height: 55px;
-                    line-height: 17px;
-                }
+            &-subtitle {
+              font-size: 16.5px;
             }
+          }
         }
+      }
+      .home-video {
+        &-title {
+          font-size: 58px;
+          margin-bottom: 0px;
+          line-height: 1.3em;
+        }
+        &-video {
+          video {
+            width: 700.6px;
+            height: auto;
+          }
+        }
+      }
+      .home-button {
+        margin-top: 40px;
+        button {
+          width: 340px;
+          height: 55px;
+          line-height: 17px;
+        }
+      }
     }
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  
-
+@media (min-width: 1200px) {
 }
 
 // XX-Large devices (larger desktops, 1537px and up)
-@media (min-width: 1537px) { 
-    .home{
-        height: 100vh;        
-        background: radial-gradient(circle at bottom left, #c43535 2%, black 40%);      
-        .home-container{
-            width: 70%;
-            .home-title{
-                margin-bottom: 20px;
-                &-logo{
-                    width: 25%;
-                    &-icon{
-                        margin-right: 15px;
-                    }
-                    &-text{
-                        img{
-                        }
-                        &-subtitle{
-                            font-size: 17.5px;
-                        }
-                    }
-                }
+@media (min-width: 1537px) {
+  .home {
+    height: 100vh;
+    background: radial-gradient(circle at bottom left, #c43535 2%, black 40%);
+    .home-container {
+      width: 70%;
+      .home-title {
+        margin-bottom: 20px;
+        &-logo {
+          width: 25%;
+          &-icon {
+            margin-right: 15px;
+          }
+          &-text {
+            img {
             }
-            .home-video{
-                &-title{
-                    font-size: 65px;
-                    margin-bottom: 20px;
-                    line-height: 1.3em
-                }
-                &-video{
-                    video{
-                        width: 788px;
-                        height: auto;
-                    }
-                }
+            &-subtitle {
+              font-size: 17.5px;
             }
-            .home-button{
-                margin-top: 20px;
-                button{
-                    width: 349px;
-                }
-            }
+          }
         }
+      }
+      .home-video {
+        &-title {
+          font-size: 65px;
+          margin-bottom: 20px;
+          line-height: 1.3em;
+        }
+        &-video {
+          video {
+            width: 788px;
+            height: auto;
+          }
+        }
+      }
+      .home-button {
+        margin-top: 20px;
+        button {
+          width: 349px;
+        }
+      }
     }
+  }
 }
