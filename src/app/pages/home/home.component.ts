@@ -5,11 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-
-  // import the video into the 'assets' folder and change the name, 
+  // import the video into the 'assets' folder and change the name,
   // then replace it with the one below
-  videoUrl = 'assets/media/example.mp4';
+  videoUrl = 'assets/media/debook.mp4';
 }
