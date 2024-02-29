@@ -28,6 +28,7 @@ jobs:
         server: ${{ secrets.IONOS_FTP_SERVER }}
         username: ${{ secrets.IONOS_FTP_USER }}
         password: ${{ secrets.IONOS_FTP_PASS }}
+        protocol: ftps
         local-dir: ./dist/debook.app/
         server-dir: /debook-app/
         # to remove older JS files with hashed names (main-[hash].js)
