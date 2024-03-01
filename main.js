@@ -34892,7 +34892,7 @@ var appConfig = {
 // src/app/pages/home/home.component.ts
 var _HomeComponent = class _HomeComponent {
   constructor() {
-    this.videoUrl = "assets/media/example.mp4";
+    this.videoUrl = "assets/media/superDemo.mp4";
   }
 };
 _HomeComponent.\u0275fac = function HomeComponent_Factory(t) {
