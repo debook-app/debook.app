@@ -3,7 +3,7 @@ name: Auto Deploy to Staging
 on:
   push:
     branches:
-      - main
+      - staging
 
 jobs:
   build:
