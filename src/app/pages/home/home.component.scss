@@ -89,11 +89,10 @@ a {
         width: 100%;
         display: flex;
         justify-content: center;
-        video {
+        iframe {
           width: 100%;
-          height: auto;
-          background-color: rgb(212, 212, 212);
-          border-radius: 10px;
+          height: 183px;
+          border-radius: 15px;
         }
       }
     }
@@ -166,9 +165,10 @@ a {
           line-height: 1.3em;
         }
         &-video {
-          video {
+          iframe {
             width: 700.6px;
-            height: auto;
+            height: 337px;
+            border-radius: 15px;
           }
         }
       }
