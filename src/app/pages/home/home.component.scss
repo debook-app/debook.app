@@ -7,7 +7,7 @@ a {
 }
 
 html { background-color: #000000 }
-body { overscroll-behavior-y: none; }
+body { overscroll-behavior-y: none; background-color: #000000; }
 
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default
@@ -128,7 +128,7 @@ body { overscroll-behavior-y: none; }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   html { background-color: #000000 }
-  body { overscroll-behavior-y: none; }
+  body { overscroll-behavior-y: none; background-color: #000000; }
   .home {
     .home-container {
       .home-video {
@@ -147,7 +147,7 @@ body { overscroll-behavior-y: none; }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   html { background-color: #000000 }
-  body { overscroll-behavior-y: none; }
+  body { overscroll-behavior-y: none; background-color: #000000; }
   .home {
     .home-container {
       .home-video {
