@@ -6,6 +6,9 @@ a {
   text-decoration: none;
 }
 
+html { background-color: #000000 }
+body { overscroll-behavior-y: none; }
+
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default
 .home {
@@ -124,6 +127,8 @@ a {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  html { background-color: #000000 }
+  body { overscroll-behavior-y: none; }
   .home {
     .home-container {
       .home-video {
@@ -141,7 +146,9 @@ a {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .home {
+  html { background-color: #000000 }
+  body { overscroll-behavior-y: none; }
+  .home {
     .home-container {
       .home-video {
         &-video {
