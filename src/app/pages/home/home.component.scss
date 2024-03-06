@@ -103,7 +103,7 @@ a {
       align-items: center;
       margin-top: 40px;
       button {
-        width: 100%;
+        width: 333px;
         height: 64px;
         padding: 20px;
         border-radius: 20px;
@@ -124,10 +124,36 @@ a {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  .home {
+    .home-container {
+      .home-video {
+        &-video {
+          iframe {
+            width: 460px;
+            height: 259px;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    .home {
+    .home-container {
+      .home-video {
+        &-video {
+          iframe {
+            width: 560px;
+            height: 315px;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -175,7 +201,7 @@ a {
       .home-button {
         margin-top: 40px;
         button {
-          width: 340px;
+          width: 333px;
           height: 55px;
           line-height: 17px;
         }
