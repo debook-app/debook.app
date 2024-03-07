@@ -11543,6 +11543,7 @@ fieldset:disabled .btn {
 }
 body {
   background-color: #000000;
+  overflow: hidden;
 }
 @font-face {
   font-family: "satoshiBlack";
