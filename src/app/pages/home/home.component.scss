@@ -6,15 +6,20 @@ a {
   text-decoration: none;
 }
 
+html { background-color: #000000 }
+body { overscroll-behavior-y: none; background-color: #000000; }
+
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default
 .home {
   width: 100%;
-  height: 100dvh;
+  min-height: 100vh;
   background: radial-gradient(circle at bottom left, #c43535 -60%, black 60%);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
+  overflow: hidden;
 
   .home-container {
     width: 90%;
@@ -24,7 +29,7 @@ a {
     flex-direction: column;
 
     .home-title {
-      margin-bottom: 30px;
+      margin-bottom: 60px;
       display: flex;
       justify-content: center;
       &-logo {
@@ -88,11 +93,10 @@ a {
         width: 100%;
         display: flex;
         justify-content: center;
-        video {
-          width: 100%;
-          height: auto;
-          background-color: rgb(212, 212, 212);
-          border-radius: 10px;
+        iframe {
+          width: 325px;
+          height: 183px;
+          border-radius: 15px;
         }
       }
     }
@@ -101,9 +105,9 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 80px;
+      margin-top: 40px;
       button {
-        width: 100%;
+        width: 349px;
         height: 64px;
         padding: 20px;
         border-radius: 20px;
@@ -124,10 +128,40 @@ a {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  html { background-color: #000000 }
+  body { overscroll-behavior-y: none; background-color: #000000; }
+  .home {
+    .home-container {
+      .home-video {
+        &-video {
+          iframe {
+            width: 460px;
+            height: 259px;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  html { background-color: #000000 }
+  body { overscroll-behavior-y: none; background-color: #000000; }
+  .home {
+    .home-container {
+      .home-video {
+        &-video {
+          iframe {
+            width: 560px;
+            height: 315px;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -165,16 +199,17 @@ a {
           line-height: 1.3em;
         }
         &-video {
-          video {
+          iframe {
             width: 700.6px;
-            height: auto;
+            height: 337px;
+            border-radius: 15px;
           }
         }
       }
       .home-button {
         margin-top: 40px;
         button {
-          width: 340px;
+          width: 349px;
           height: 55px;
           line-height: 17px;
         }
