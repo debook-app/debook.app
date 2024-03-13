@@ -7,7 +7,7 @@ a {
 }
 
 html { background-color: #000000 }
-body { overscroll-behavior-y: none; background-color: #000000; }
+// body { overscroll-behavior-y: none; background-color: #000000; }
 
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default
@@ -19,7 +19,7 @@ body { overscroll-behavior-y: none; background-color: #000000; }
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
-  overflow: hidden;
+  // overflow: hidden;
 
   .home-container {
     width: 90%;
@@ -100,8 +100,9 @@ body { overscroll-behavior-y: none; background-color: #000000; }
         margin-bottom: 20px;
 
         iframe {
-          width: 325px;
-          height: 183px;
+          width: calc(325px - (325px * 0.2));
+          // height: 183px;
+          height: auto;
           border-radius: 15px;
           border: 1px solid rgb(149, 149, 149);
         }
@@ -136,7 +137,7 @@ body { overscroll-behavior-y: none; background-color: #000000; }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   html { background-color: #000000 }
-  body { overscroll-behavior-y: none; background-color: #000000; }
+  // body { overscroll-behavior-y: none; background-color: #000000; }
   .home {
     .home-container {
       .home-title{
@@ -171,7 +172,7 @@ body { overscroll-behavior-y: none; background-color: #000000; }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   html { background-color: #000000 }
-  body { overscroll-behavior-y: none; background-color: #000000; }
+  // body { overscroll-behavior-y: none; background-color: #000000; }
   .home {
     .home-container {
       .home-video {
