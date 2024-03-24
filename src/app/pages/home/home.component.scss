@@ -92,6 +92,18 @@ html { background-color: #000000 }
       .video-wrap{
         display: flex;
         flex-direction: column;
+
+        .descAndVideo{
+          margin: auto;
+            .description{
+              color: rgb(237, 237, 237);
+              font-size: 0.9em;
+              text-align: center;
+              margin-bottom: 3px;
+          }
+        }
+
+
       }
       &-video {
         width: 100%;
@@ -114,7 +126,7 @@ html { background-color: #000000 }
       justify-content: center;
       align-items: center;
       margin-top: 20px;
-      button {
+      &-btn {
         width: 349px;
         height: 64px;
         padding: 20px;
@@ -122,13 +134,13 @@ html { background-color: #000000 }
         border: 0.5px solid #f44;
         background: #f44;
         text-align: center;
-
         color: #fff;
         font-size: 15px;
-        font-weight: 700;
+        
         font-family: $satoshiBold;
         line-height: 24px;
         letter-spacing: -0.32px;
+        font-weight: 600;
       }
     }
   }
@@ -222,6 +234,7 @@ html { background-color: #000000 }
         .video-wrap{
           display: flex;
           flex-direction: row;
+          margin-top: 50px;
         }
         &-title {
           font-size: 58px;
