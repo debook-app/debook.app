@@ -37,7 +37,7 @@ html { background-color: #000000 }
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        width: 50%;
         &-icon {
           margin-right: 10px;
           display: flex;
@@ -57,10 +57,11 @@ html { background-color: #000000 }
           &-subtitle {
             color: #fff;
             text-align: center;
-            font-size: 14px;
+            font-size: 10px;
             font-weight: 500;
             line-height: 97%;
             letter-spacing: -0.525px;
+
             margin-top: 10px;
             font-family: $satoshiRegular;
           }
@@ -71,7 +72,7 @@ html { background-color: #000000 }
     .home-video {
       &-title {
         text-align: center;
-        font-size: 43px;
+        font-size: 33px;
         font-weight: 500;
         line-height: 1.1em;
         letter-spacing: -1.95px;
@@ -85,6 +86,8 @@ html { background-color: #000000 }
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        width: 66%;
+        margin:auto;
         margin-bottom: 25px;
         font-family: $satoshiMedium;
         padding-bottom: 15px;
@@ -116,7 +119,7 @@ html { background-color: #000000 }
           // height: 183px;
           height: auto;
           border-radius: 15px;
-          border: 1px solid rgb(149, 149, 149);
+          // border: 1px solid rgb(149, 149, 149);
         }
       }
     }
@@ -136,11 +139,9 @@ html { background-color: #000000 }
         text-align: center;
         color: #fff;
         font-size: 15px;
-        
-        font-family: $satoshiBold;
+        font-family: $satoshiMedium;
         line-height: 24px;
         letter-spacing: -0.32px;
-        font-weight: 600;
       }
     }
   }
